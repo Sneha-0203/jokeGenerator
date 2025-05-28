@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(250, 244, 244);
+
+
+}
+.slider-container{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.slider{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transform: transform 1.0s ease-in-out;
+
+}
+.slide{
+    width: 33.333%;
+    height: 100%;
+
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.slider-button{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: antiquewhite;
+    color: #333;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: backgroung-color 1.0s;
+}
+.slider-button:hover{
+    background-color: rgb(158, 156, 156);
+}
+.left{
+    left:10px;
+}
+.right{
+    right:10px;
+}
+.dots-container{
+position: absolute;
+bottom: 20px;
+left:50%;
+transform: translateX(-50%);
+display: flex;
+gap:10px;
+}
+.dot{
+width: 12px;
+height: 12px;
+background-color: darkgray;
+border-radius: 50%;
+cursor: pointer;
+transition: background-color 1.0s;
+}
+.dot.active{
+    background-color: antiquewhite;
+}
