@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Example</title>
 </head>
 <body>
-<input type="text" class="num">
-<button onclick="check()">check</button>
-<script>
-    var num=document.getElementsByClassName("num")
-     var a=Math.floor(Math.random()*10)+1
-    function check(){
-        if(a==Number(num.value))
+  <!-- <input id="input" type="text">
+<button onclick="update()">Add</button>
+<div id="result"></div> -->
+
+  <!-- <div>
+    <h1>John</h1>
+  </div>
+  <script>
+    var div=document.querySelector("div")
+    div.append("Hello") -->
+/    <!-- <input type="text" id="input" >
+ <button id="btn" onclick="change()">btn</button>
+  <button onclick="update()">btn</button>
+  <div id="result"></div>
+
+function update() {
+    result.innerHTML += `<h1>${input.value}</h1>`;
+}
+  <script>
+    var result = document.getElementById("result");
+    var input = document.getElementById("input");
+var btn=document.getElementById("btn")
+    function update() {
+        var h1=document.createElement("h1")
+        h1.textContent=input.value
+      result.append (h1);
+    }
+    function change()
     {
-        console.log("right")
-    }
-    else{
-                console.log("wrong")
+        btn.style.backgroundColor="red"
 
     }
+  </script> -->
+<!-- <h1 id="name">Name</h1>
+<button onclick="update(event)" id="a">A</button><button  onclick="update(event)" id="b">B</button><button onclick="update(event)"  id="c">C</button>
+<script>
+    var h1=document.getElementById("name")
+    function update(event){
+h1.textContent=event.target.textContent
 
     }
-
-
-
 </script>
-  </body>
+
+ -->
+
+
+
+
+
+</body>
 </html>
