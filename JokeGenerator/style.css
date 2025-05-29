@@ -5,7 +5,7 @@
     font-family:"Rubik",sans-serif;
 }
 body{
-    background-color:  #f0f8ff;
+    background-color: #fab22e;
 }
 .wrapper{
     width: 80vmin;
@@ -35,7 +35,7 @@ p{
 }
 button{
     display: block;
-    background-color: #f0f8ff;
+    background-color: #fab22e;
     border:none;
     padding: 5px;
     font-size: 18px;
@@ -45,5 +45,6 @@ button{
     margin: 0 auto;
     border-radius: 5px;
     cursor: pointer;
+
 
 }
